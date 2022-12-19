@@ -1,25 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import styled from 'styled-components/native'
-import Lottie from 'lottie-react-native';
-const AppContainer = styled.View`
-  flex: 1;
-  background-color: red;
-`;
+import WelcomeScreen from './src/screens/WelcomeScreen';
 export default function App() {
-  return (
-    <AppContainer >
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </AppContainer>
-  );
+  return <WelcomeScreen />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
